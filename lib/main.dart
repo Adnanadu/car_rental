@@ -1,4 +1,5 @@
-import 'package:car_rental/feature/onBoardingPage/view/pages/on_boarding_page.dart';
+import 'package:car_rental/presentation/pages/car_list_screen.dart';
+import 'package:car_rental/presentation/pages/on_boarding_page.dart';
 import 'package:car_rental/firebase_options.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const OnBoardingPage(),
+      home: CarListScreen(),
     );
   }
 }

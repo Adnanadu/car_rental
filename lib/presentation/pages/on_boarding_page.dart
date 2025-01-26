@@ -6,6 +6,7 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff2c2834),
       body: Column(
         children: [
           Expanded(
@@ -13,7 +14,7 @@ class OnBoardingPage extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/bmw_1.jpg'),
+                  image: AssetImage('assets/images/onboarding.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -22,11 +23,13 @@ class OnBoardingPage extends StatelessWidget {
           Expanded(
             child: Container(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 10,
                 children: [
                   Text("Premium Cars \nEnjoy the Luxury",
                       style: TextStyle(
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontSize: 32,
                           fontWeight: FontWeight.bold)),
                   Text(
