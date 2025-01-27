@@ -7,3 +7,4 @@ class Car {
   Car({required this.model, required this.distance, required this.fuelCapacity, required this.pricePerHour});
 
 }
+
