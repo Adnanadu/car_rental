@@ -4,7 +4,7 @@ import 'package:car_rental/presentation/bloc/car_event.dart';
 import 'package:car_rental/presentation/bloc/car_state.dart';
 
 class CarBloc extends Bloc<CarEvent, CarState> {
-    final GetCars getCars;
+  final GetCars getCars;
   CarBloc({required this.getCars}) : super(CarsLoading()) {
     on<LoadCars>((event, emit) async {
       emit(CarsLoading());

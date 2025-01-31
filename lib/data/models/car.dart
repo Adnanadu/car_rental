@@ -1,19 +1,16 @@
-class Car {
-  final String model;
-  final double distance;
-  final double fuelCapacity;
-  final double pricePerHour;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  Car({required this.model, required this.distance, required this.fuelCapacity, required this.pricePerHour});
+part 'car.freezed.dart';
+part 'car.g.dart';
 
-  factory Car.fromMap(Map<String, dynamic> map) {
-    return Car(
-      model: map['model'],
-      distance: map['distance'],
-      fuelCapacity: map['fuelCapacity'],
-      pricePerHour: map['pricePerHour'],
-    );
-  }
+@freezed
+class Car with _$Car {
+  const factory Car({
+    required num distance,
+    required num fuelCapacity,
+    required String model,
+    required num pricePerHour,
+  }) = _Car;
 
+  factory Car.fromJson(Map<String, dynamic> json) => _$CarFromJson(json);
 }
-
