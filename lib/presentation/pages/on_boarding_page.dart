@@ -22,43 +22,41 @@ class OnBoardingPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                spacing: 10,
-                children: [
-                  Text("Premium Cars \nEnjoy the Luxury",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold)),
-                  Text(
-                      "Premium and Presticious cars for rental \nExpertise the thrill at a lower price",
-                      style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold)),
-                  SizedBox(height: 10),
-                  SizedBox(
-                    width: 320,
-                    height: 54,
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.of(context).pushAndRemoveUntil(
-                              MaterialPageRoute(
-                                  builder: (context) => CarListScreen()),
-                              (route) => false);
-                        },
-                        style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.black,
-                            backgroundColor: Colors.white),
-                        child: Text("Let's Go",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold))),
-                  )
-                ],
-              ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 10,
+              children: [
+                Text("Premium Cars \nEnjoy the Luxury",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold)),
+                Text(
+                    "Premium and Presticious cars for rental \nExpertise the thrill at a lower price",
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold)),
+                SizedBox(height: 10),
+                SizedBox(
+                  width: 320,
+                  height: 54,
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(
+                                builder: (context) => CarListScreen()),
+                            (route) => false);
+                      },
+                      style: ElevatedButton.styleFrom(
+                          foregroundColor: Colors.black,
+                          backgroundColor: Colors.white),
+                      child: Text("Let's Go",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold))),
+                )
+              ],
             ),
           )
         ],
